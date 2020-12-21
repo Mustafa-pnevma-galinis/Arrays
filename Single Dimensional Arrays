@@ -1,0 +1,27 @@
+package test;
+
+public class Arr {
+
+    public static void retArr (int[] a) { //Input an array to be a parameter in the method....
+        int m = a[3];
+        for (int i = 0 ;i<a.length;i++) {
+            if (m<a[i]){/*if the array is {1,2,3,4,5};
+                           while m = 1 <for example> 1<2 (Right)  */
+                m = a[i]; //then it will equalise both value of <m> and a[i];
+                          //for each iteration the equation get equaled till actualise the the condition of {if}...
+                System.out.println(m);
+            }
+
+        }
+
+    }
+    public static void main (String [] args){
+        int []e = {1,2,3,4,6,99};
+        retArr(e);
+    }
+}
+//Note:
+       /* while m = ArrayName [Num]; This number will be excluded
+          while being input within iteration and conditional if...
+          So it will starts from the next item in the array sequence.
+        */
